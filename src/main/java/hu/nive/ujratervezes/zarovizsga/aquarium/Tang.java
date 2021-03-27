@@ -1,6 +1,13 @@
 package hu.nive.ujratervezes.zarovizsga.aquarium;
 
-public class Tang {
-    public Tang(String dory, int i, String blue) {
+public class Tang extends Fish{
+
+    public Tang(String name, int weight, String color) {
+        super(name, weight, color, true);
+    }
+
+    @Override
+    void feed() {
+        super.increaseWeight(1);
     }
 }

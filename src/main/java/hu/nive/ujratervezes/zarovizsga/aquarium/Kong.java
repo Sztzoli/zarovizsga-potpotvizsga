@@ -1,6 +1,14 @@
 package hu.nive.ujratervezes.zarovizsga.aquarium;
 
-public class Kong {
-    public Kong(String kong, int i, String black) {
+public class Kong extends Fish {
+
+
+    public Kong(String name, int weight, String color) {
+        super(name, weight, color);
+    }
+
+    @Override
+    void feed() {
+        super.increaseWeight(2);
     }
 }
